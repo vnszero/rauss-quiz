@@ -301,7 +301,7 @@ function activateEasterEgg() {
 // Function to verify easter egg code
 function checkEasterEggCode() {
     const codeInput = document.getElementById("easter-egg-code");
-    if (codeInput.value === "0000FF" || codeInput.value === "0000ff") {
+    if (codeInput.value === "IG" || codeInput.value === "ig") {
         activateEasterEgg();
     } else {
         alert("Código incorreto! Tente novamente.");
