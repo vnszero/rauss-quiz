@@ -34,19 +34,19 @@
                 <div class="control-group">
                     <label for="question-category-control">Categoria:</label>
                     <select id="question-category-control">
-                        <option value="0" selected>Todas</option>
+                        <option value="0">Todas</option>
                         <option value="1">CDs e Músicas</option>
                         <option value="2">Cargos, Funções e Normas</option>
                         <option value="3">Condecorações</option>
                         <option value="4">Festivais e Prémios</option>
                         <option value="5">História e Origens</option>
                         <option value="6">Hierarquia e Membros</option>
-                        <option value="7">Teoria Musical</option>
+                        <option value="7" selected>Teoria Musical</option>
                     </select>
                 </div>
             </div>
             <div class="control-pair">
-                <div class="control-group">
+                <div class="control-group" id="question-count-div">
                     <label for="question-count-control">Questões:</label>
                     <select id="question-count-control">
                         <option value="5">5</option>
@@ -177,7 +177,7 @@
 
                         <div class="input-field col s12">
                             <input type="text" id="question-field" required />
-                            <label for="question">Pergunta</label>
+                            <label for="question-field">Pergunta</label>
                         </div>
 
                         <div class="input-field col s12">

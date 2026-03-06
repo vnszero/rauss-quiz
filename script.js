@@ -144,6 +144,8 @@ const scoreElement = document.getElementById("score");
 const startButton = document.getElementById("start-button");
 const gameContainer = document.getElementById("game-container");
 const questionCountSelect = document.getElementById("question-count-control");
+const questionCountDiv = document.getElementById("question-count-div");
+const categorySelect = document.getElementById("question-category-control");
 const questionContainer = document.getElementById("question");
 const scoreContainer = document.getElementById("result-container");
 const categorySelector = document.getElementById("question-category-control");
@@ -419,6 +421,14 @@ function showQuestionList() {
     // Bind Edit/Delete events
     bindAdminActionEvents();
 }
+
+categorySelect.addEventListener("change", () => {    
+    if (categorySelect.value === "0") {
+        questionCountDiv.style.display = "block";
+    } else {
+        questionCountDiv.style.display = "none";
+    }
+});
 
 modeSelector.addEventListener("change", () => {
     if (modeSelector.value === "1") {

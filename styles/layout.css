@@ -22,6 +22,10 @@
     width: 100%;
 }
 
+#question-count-div {
+    display: none;
+}
+
 #start-button {
     width: 100%;
 }
