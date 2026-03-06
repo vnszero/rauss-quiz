@@ -2,29 +2,27 @@
 
 #controls {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 15px;
-    justify-content: center;
     margin-top: 15px;
     width: 100%;
 }
 
-#controls > div {
-    flex: 1;
-    min-width: 250px;
-}
-
 #controls label {
     font-size: 16px;
-    display: block;
     margin-bottom: 5px;
 }
 
-#controls select, #controls button {
+#controls select,
+#controls button {
     border: none;
     border-radius: 5px;
     font-size: 14px;
     padding: 5px 10px;
+    width: 100%;
+}
+
+#start-button {
     width: 100%;
 }
 
@@ -35,14 +33,14 @@
 
 .control-pair {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     gap: 20px;
+    width: 100%;
 }
 
 .control-group {
     display: flex;
     flex-direction: column;
+    flex: 1;
 }
 
 .control-group label {

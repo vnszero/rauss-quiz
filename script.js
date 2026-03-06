@@ -68,6 +68,7 @@ function loadQuestionsFromFile() {
 
             // Build categories map with numeric keys
             // Start from 1 (string keys: "1", "2", ...)
+            discoveredCategories.sort();
             discoveredCategories.forEach((cat, index) => {
                 categories[(index + 1).toString()] = cat;
             });
@@ -118,6 +119,7 @@ async function loadQuestionsFromFirebase() {
         // Build categories map with numeric keys
         // Start from 1 (string keys: "1", "2", ...)
         categories = {};
+        discoveredCategories.sort();
         discoveredCategories.forEach((cat, index) => {
             categories[(index + 1).toString()] = cat;
         });
